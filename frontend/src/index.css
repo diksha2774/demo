@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Remove default scrollbar */
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Contains the scrollable area */
+}
+
+.editor {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.canvas-container {
+  width: 600px;
+  height: 400px;
+  border: 2px dashed #ccc;
+  background: white;
+  position: relative;
+}
+
+.toolbar, .sidebar, .history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
